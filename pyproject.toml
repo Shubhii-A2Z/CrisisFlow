@@ -1,0 +1,14 @@
+[project]
+name = "crisis-flow"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dotenv>=0.9.9",
+    "fastapi>=0.163.1",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+crisis-flow = "src.main:main"
