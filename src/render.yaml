@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: crisisflow-demo
+    runtime: python
+    buildCommand: python -c "print('No external dependencies')"
+    startCommand: python run_demo.py
+    healthCheckPath: /
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
